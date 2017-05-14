@@ -107,29 +107,28 @@
                         android:textColor="@android:color/white" />
 
                 </LinearLayout>
-                
+
                 <Button
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
                     android:id="@+id/loginViaFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/login_via_facebook_settings_button_name"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@color/category_settings"/>
-                
-                <Button
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
+                    android:backgroundTint="@color/category_settings"
+                    android:text="@string/login_via_facebook_settings_button_name"
+                    android:textColor="@android:color/white" />
+
+                <Button
                     android:id="@+id/loginViaGoogle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:backgroundTint="@android:color/holo_red_dark"
                     android:text="@string/login_via_google_settings_button_name"
-                    android:textColor="@android:color/white"
-                    android:backgroundTint="@android:color/holo_red_dark"/>
-                
+                    android:textColor="@android:color/white" />
+
             </LinearLayout>
-           
 
 
         </LinearLayout>

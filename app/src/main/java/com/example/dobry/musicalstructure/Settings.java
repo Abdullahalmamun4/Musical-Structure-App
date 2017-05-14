@@ -1,7 +1,7 @@
 package com.example.dobry.musicalstructure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -23,28 +23,28 @@ public class Settings extends AppCompatActivity {
         registerSpotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), R.string.settings_register_message,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.settings_register_message, Toast.LENGTH_SHORT).show();
             }
         });
 
         loginSpotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), R.string.settings_login_message,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.settings_login_message, Toast.LENGTH_SHORT).show();
             }
         });
 
         logintoSpotifyViaFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), R.string.settings_login_message,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.settings_login_message, Toast.LENGTH_SHORT).show();
             }
         });
 
         logintoSpotifyViaGoogle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), R.string.settings_login_message,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), R.string.settings_login_message, Toast.LENGTH_SHORT).show();
             }
         });
 

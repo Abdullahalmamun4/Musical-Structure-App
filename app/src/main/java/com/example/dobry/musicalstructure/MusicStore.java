@@ -1,7 +1,7 @@
 package com.example.dobry.musicalstructure;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Toast;
@@ -29,28 +29,28 @@ public class MusicStore extends AppCompatActivity {
         infoButtonAlbum1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Info about album 1",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Info about album 1", Toast.LENGTH_SHORT).show();
             }
         });
 
         infoButtonAlbum2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Info about album 2",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Info about album 2", Toast.LENGTH_SHORT).show();
             }
         });
 
         infoButtonAlbum3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Info about album 3",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Info about album 3", Toast.LENGTH_SHORT).show();
             }
         });
 
         infoButtonAlbum4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Info about album 4",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Info about album 4", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -58,28 +58,28 @@ public class MusicStore extends AppCompatActivity {
         addToShoppingCartButtonAlbum1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Album has been added to Shopping Card",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Album has been added to Shopping Card", Toast.LENGTH_SHORT).show();
             }
         });
 
         addToShoppingCartButtonAlbum2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Album has been added to Shopping Card",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Album has been added to Shopping Card", Toast.LENGTH_SHORT).show();
             }
         });
 
         addToShoppingCartButtonAlbum3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Album has been added to Shopping Card",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Album has been added to Shopping Card", Toast.LENGTH_SHORT).show();
             }
         });
 
         addToShoppingCartButtonAlbum4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Album has been added to Shopping Card",Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Album has been added to Shopping Card", Toast.LENGTH_SHORT).show();
             }
         });
     }

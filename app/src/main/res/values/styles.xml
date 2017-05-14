@@ -30,12 +30,14 @@
 
     <!-- Style for album -->
     <!-- Name of band -->>
+
     <style name="NameOfBand">
         <item name="android:textSize">@dimen/size_title_of_album</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <!-- Title of album -->>
+
     <style name="TitleOfAlbum">
         <item name="android:textSize">@dimen/size_title_of_album</item>
         <item name="android:textStyle">italic</item>
