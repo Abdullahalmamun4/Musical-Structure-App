@@ -30,7 +30,6 @@ public class MusicStore extends AppCompatActivity {
         Button nowIsPlayingTopMenuButton = (Button) findViewById(R.id.settingsMenuNowIsPlaying);
         Button albumsTopMenuButton = (Button) findViewById(R.id.settingsMenuAlbums);
         Button artistTopMenuButton = (Button) findViewById(R.id.settingsMenuArtist);
-        //Button musicStoreTopMenuButton = (Button) findViewById(R.id.settingsMenuMusicStore);
         Button settingsTopMenuButton = (Button) findViewById(R.id.settingsTopMenuSettings);
 
         // Listeners for info buttons
@@ -60,15 +59,6 @@ public class MusicStore extends AppCompatActivity {
             }
         });
 
-/*
-        musicStoreTopMenuButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent MusicStoreIntent = new Intent(Artist.this, MusicStore.class);
-                startActivity(MusicStoreIntent);
-            }
-        });
-*/
         settingsTopMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

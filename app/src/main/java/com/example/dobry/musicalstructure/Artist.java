@@ -22,7 +22,6 @@ public class Artist extends AppCompatActivity {
 
         Button nowIsPlayingTopMenuButton = (Button) findViewById(R.id.settingsMenuNowIsPlaying);
         Button albumsTopMenuButton = (Button) findViewById(R.id.settingsMenuAlbums);
-        //Button artistTopMenuButton = (Button) findViewById(R.id.settingsMenuArtist);
         Button musicStoreTopMenuButton = (Button) findViewById(R.id.settingsMenuMusicStore);
         Button settingsTopMenuButton = (Button) findViewById(R.id.settingsTopMenuSettings);
 
@@ -44,16 +43,6 @@ public class Artist extends AppCompatActivity {
                 startActivity(AlbumsIntent);
             }
         });
-
-        /*
-        artistTopMenuButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent ArtistIntent = new Intent(Artist.this, Artist.class);
-                startActivity(ArtistIntent);
-            }
-        });
-*/
 
         musicStoreTopMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override

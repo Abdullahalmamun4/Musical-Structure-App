@@ -23,7 +23,6 @@ public class Albums extends AppCompatActivity {
         ImageButton addToPlayListAlbumTwo = (ImageButton) findViewById(R.id.addToPlayListAlbumTwo);
 
         Button nowIsPlayingTopMenuButton = (Button) findViewById(R.id.settingsMenuNowIsPlaying);
-        //Button albumsTopMenuButton = (Button) findViewById(R.id.settingsMenuAlbums);
         Button artistTopMenuButton = (Button) findViewById(R.id.settingsMenuArtist);
         Button musicStoreTopMenuButton = (Button) findViewById(R.id.settingsMenuMusicStore);
         Button settingsTopMenuButton = (Button) findViewById(R.id.settingsTopMenuSettings);
@@ -37,16 +36,6 @@ public class Albums extends AppCompatActivity {
                 startActivity(nowIsPlayingIntent);
             }
         });
-
-        /*
-        albumsTopMenuButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent AlbumsIntent = new Intent(Albums.this, Albums.class);
-                startActivity(AlbumsIntent);
-            }
-        });
-        */
 
         artistTopMenuButton.setOnClickListener(new View.OnClickListener() {
             @Override

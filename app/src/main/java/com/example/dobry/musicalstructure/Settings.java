@@ -24,7 +24,6 @@ public class Settings extends AppCompatActivity {
         Button albumsTopMenuButton = (Button) findViewById(R.id.settingsMenuAlbums);
         Button artistTopMenuButton = (Button) findViewById(R.id.settingsMenuArtist);
         Button musicStoreTopMenuButton = (Button) findViewById(R.id.settingsMenuMusicStore);
-        //Button settingsTopMenuButton = (Button) findViewById(R.id.settingsTopMenuSettings);
 
         // Listeners for info buttons
         // CLICKS ON TOP MENU BUTTONS:
@@ -59,15 +58,7 @@ public class Settings extends AppCompatActivity {
                 startActivity(MusicStoreIntent);
             }
         });
-        /*
-        settingsTopMenuButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent SettingsIntent = new Intent(NowIsPlaying.this, Settings.class);
-                startActivity(SettingsIntent);
-            }
-        });
-        */
+
         registerSpotifyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
