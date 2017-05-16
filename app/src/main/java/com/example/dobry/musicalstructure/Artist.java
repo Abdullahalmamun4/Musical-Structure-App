@@ -1,5 +1,6 @@
 package com.example.dobry.musicalstructure;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,7 +20,58 @@ public class Artist extends AppCompatActivity {
         Button readMoreArtist3 = (Button) findViewById(R.id.readMoreButtonArtist3);
         Button readMoreArtist4 = (Button) findViewById(R.id.readMoreButtonArtist4);
 
+        Button nowIsPlayingTopMenuButton = (Button) findViewById(R.id.settingsMenuNowIsPlaying);
+        Button albumsTopMenuButton = (Button) findViewById(R.id.settingsMenuAlbums);
+        //Button artistTopMenuButton = (Button) findViewById(R.id.settingsMenuArtist);
+        Button musicStoreTopMenuButton = (Button) findViewById(R.id.settingsMenuMusicStore);
+        Button settingsTopMenuButton = (Button) findViewById(R.id.settingsTopMenuSettings);
+
+
         // Listeners for buttons
+        // CLICKS ON TOP MENU BUTTONS:
+        nowIsPlayingTopMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent nowIsPlayingIntent = new Intent(Artist.this, NowIsPlaying.class);
+                startActivity(nowIsPlayingIntent);
+            }
+        });
+
+        albumsTopMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent AlbumsIntent = new Intent(Artist.this, Albums.class);
+                startActivity(AlbumsIntent);
+            }
+        });
+
+        /*
+        artistTopMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ArtistIntent = new Intent(Artist.this, Artist.class);
+                startActivity(ArtistIntent);
+            }
+        });
+*/
+
+        musicStoreTopMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent MusicStoreIntent = new Intent(Artist.this, MusicStore.class);
+                startActivity(MusicStoreIntent);
+            }
+        });
+
+        settingsTopMenuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent SettingsIntent = new Intent(Artist.this, Settings.class);
+                startActivity(SettingsIntent);
+            }
+        });
+
+
         readMoreArtist1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

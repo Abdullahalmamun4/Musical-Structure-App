@@ -6,9 +6,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:background="@color/tan_background"
         android:orientation="vertical"
+        android:weightSum="5"
         tools:context="com.example.dobry.musicalstructure.MainActivity">
 
         <LinearLayout
@@ -117,7 +118,6 @@
                 android:text="@string/settings" />
 
         </LinearLayout>
-
 
     </LinearLayout>
 </ScrollView>

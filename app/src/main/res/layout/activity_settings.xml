@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.dobry.musicalstructure.Settings">
+
+    <LinearLayout
+        android:id="@+id/settingsTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingsMenuNowIsPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_now_is_playing"
+            android:text="@string/now_is_playing_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuAlbums"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_albums"
+            android:text="@string/albums_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuArtist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_artists"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuMusicStore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_music_store"
+            android:text="@string/music_store_name"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -131,13 +176,18 @@
 
         </LinearLayout>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/little_margin"
+                android:text="@string/settings_screen_description" />
+
+        </ScrollView>
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="@dimen/little_margin"
-        android:text="@string/settings_screen_description" />
-
-</RelativeLayout>
+</LinearLayout>

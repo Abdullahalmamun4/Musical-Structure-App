@@ -1,15 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.dobry.musicalstructure.Settings">
+
+    <LinearLayout
+        android:id="@+id/settingsTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingsMenuNowIsPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_now_is_playing"
+            android:text="@string/now_is_playing_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuAlbums"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_albums"
+            android:text="@string/albums_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuArtist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_artists"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuMusicStore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_music_store"
+            android:text="@string/music_store_name"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+        android:layout_margin="@dimen/little_margin"
         android:orientation="vertical">
 
         <LinearLayout
@@ -25,8 +70,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginLeft="@dimen/little_margin"
+                android:layout_marginRight="@dimen/little_margin"
                 android:orientation="horizontal">
 
                 <TextView
@@ -47,12 +92,11 @@
 
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginLeft="@dimen/little_margin"
+                android:layout_marginRight="@dimen/little_margin"
                 android:orientation="horizontal">
 
                 <TextView
@@ -81,8 +125,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/little_margin"
+                    android:layout_marginRight="@dimen/little_margin"
                     android:layout_marginTop="20dp"
                     android:orientation="horizontal">
 
@@ -112,8 +156,8 @@
                     android:id="@+id/loginViaFacebook"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/little_margin"
+                    android:layout_marginRight="@dimen/little_margin"
                     android:backgroundTint="@color/category_settings"
                     android:text="@string/login_via_facebook_settings_button_name"
                     android:textColor="@android:color/white" />
@@ -122,24 +166,28 @@
                     android:id="@+id/loginViaGoogle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="@dimen/little_margin"
+                    android:layout_marginRight="@dimen/little_margin"
                     android:backgroundTint="@android:color/holo_red_dark"
                     android:text="@string/login_via_google_settings_button_name"
                     android:textColor="@android:color/white" />
 
             </LinearLayout>
 
-
         </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/little_margin"
+                android:text="@string/settings_screen_description" />
+
+        </ScrollView>
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_margin="8dp"
-        android:text="@string/settings_screen_description" />
-
-</RelativeLayout>
+</LinearLayout>

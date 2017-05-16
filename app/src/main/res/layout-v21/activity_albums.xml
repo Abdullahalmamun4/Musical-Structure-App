@@ -1,9 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.example.dobry.musicalstructure.Albums">
+
+    <LinearLayout
+        android:id="@+id/settingsTopMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_dark_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/settingsMenuNowIsPlaying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_now_is_playing"
+            android:text="@string/now_is_playing_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsTopMenuSettings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_settings"
+            android:text="@string/settings_name"
+            android:textColor="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/settingsMenuArtist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_artists"
+            android:text="@string/artist_name"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/settingsMenuMusicStore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/category_music_store"
+            android:text="@string/music_store_name"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,7 +60,7 @@
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="8dp"
+            android:layout_margin="@dimen/little_margin"
             android:layout_weight="1"
             android:background="@color/accent_color"
             android:gravity="center"
@@ -24,30 +70,30 @@
                 android:id="@+id/coverOfAlbum1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/little_margin"
                 android:src="@drawable/awolnationcover" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/little_margin"
+                android:layout_marginLeft="@dimen/little_margin"
+                android:layout_marginRight="@dimen/little_margin"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/nameOfBand1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Awolnation"
-                    android:textSize="16sp"
+                    android:text="@string/awolnation_band_name"
+                    android:textSize="@dimen/size_title_of_album"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Run"
-                    android:textSize="16sp"
+                    android:text="@string/run_album"
+                    android:textSize="@dimen/size_title_of_song"
                     android:textStyle="italic" />
 
                 <LinearLayout
@@ -90,30 +136,30 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="8dp"
+                android:layout_margin="@dimen/little_margin"
                 android:src="@drawable/abneypark" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginBottom="@dimen/little_margin"
+                android:layout_marginLeft="@dimen/little_margin"
+                android:layout_marginRight="@dimen/little_margin"
                 android:gravity=""
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Abney Park"
-                    android:textSize="16sp"
+                    android:text="@string/abney_park_band_name"
+                    android:textSize="@dimen/size_title_of_album"
                     android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lost Horizons"
-                    android:textSize="16sp"
+                    android:text="@string/lost_horizons_album_name"
+                    android:textSize="@dimen/size_title_of_song"
                     android:textStyle="italic" />
 
                 <LinearLayout
@@ -149,8 +195,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_margin="18dp"
-        android:text="Here is an album list screen. This screen should support scrolling. You can add an album to the playlist (the 'Add to playlist' button, the 'Play list' screen should be implemented) or play the selected album by clicking on the 'Play' button. When clicked, the user is moved to the 'Now is playing' screen." />
+        android:text="@string/albums_screen_description" />
 
-</RelativeLayout>
+</LinearLayout>
