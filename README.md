@@ -2,7 +2,7 @@
 
 [![N|Solid](http://i.imgur.com/bMBnFR5m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/BM9qdAIm.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/o6phPJ9m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/b8U2IZSm.png)](https://nodesource.com/products/nsolid)
 
-# Layout
+# #App Design
 -------
 
 ### Suitability
@@ -19,7 +19,7 @@ Each activity is clearly labelled, using a TextView, such that the final purpose
 The app contains 3 to 6 activities.
 
 
-# Layout
+# #Layout
 -------
 
 ### Structure
@@ -38,7 +38,7 @@ The code adheres to all of the following best practices:
 - Padding and margin is used appropriately, such that the views are not crammed up against each other.
 
 
-# Functionality
+# #Functionality
 -------
 
 ### Runtime Errors
@@ -51,7 +51,7 @@ Each button’s behavior is determined by an *OnClickListener* in the Java code 
 Each button properly opens the intended activity using an explicit Intent.
 
 
-# Code Quality
+# #Code Quality
 -------
 
 ### Code Formatting
