@@ -1,6 +1,6 @@
 # Musical Structure - Project Specification
 
-[![N|Solid](http://i.imgur.com/bMBnFR5m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/BM9qdAIm.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/o6phPJ9m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/b8U2IZSm.png)](https://nodesource.com/products/nsolid)
+[![N|Solid](http://i.imgur.com/bMBnFR5m.png)](http://i.imgur.com/bMBnFR5m.png) [![N|Solid](http://i.imgur.com/BM9qdAIm.png)](http://i.imgur.com/BM9qdAIm.png) [![N|Solid](http://i.imgur.com/o6phPJ9m.png)](http://i.imgur.com/o6phPJ9m.png) [![N|Solid](http://i.imgur.com/b8U2IZSm.png)](http://i.imgur.com/b8U2IZSm.png)
 
 App Design
 ----------
