@@ -2,7 +2,8 @@
 
 [![N|Solid](http://i.imgur.com/bMBnFR5m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/BM9qdAIm.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/o6phPJ9m.png)](https://nodesource.com/products/nsolid) [![N|Solid](http://i.imgur.com/b8U2IZSm.png)](https://nodesource.com/products/nsolid)
 
-# App Design
+App Design
+----------
 
 ### Suitability
 The app’s structure is suitable for a music player app. A similarly structured app which focuses on audiobooks, podcasts, or other audio media is also acceptable.
@@ -18,7 +19,8 @@ Each activity is clearly labelled, using a TextView, such that the final purpose
 The app contains 3 to 6 activities.
 
 
-# Layout
+Layout
+----------
 
 ### Structure
 The app contains multiple activities, each labelled, which together make a cohesive music app.
@@ -36,7 +38,8 @@ The code adheres to all of the following best practices:
 - Padding and margin is used appropriately, such that the views are not crammed up against each other.
 
 
-# Functionality
+Functionality
+----------
 
 ### Runtime Errors
 The code runs without errors
@@ -48,7 +51,8 @@ Each button’s behavior is determined by an *OnClickListener* in the Java code 
 Each button properly opens the intended activity using an explicit Intent.
 
 
-# Code Quality
+Code Quality
+----------
 
 ### Code Formatting
 The code is properly formatted i.e. there are no unnecessary blank lines; there are no unused variables or methods; there is no commented out code.
